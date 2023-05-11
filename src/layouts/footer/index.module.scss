@@ -1,0 +1,147 @@
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  background-color: #212121;
+  padding: 40px 0 76px 0;
+}
+
+.footer_container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.footer_info_nav_con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.footer_info_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer_info_nav_link {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inter-regular;
+}
+
+.footer_info_imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  max-width: 296px;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+
+.footer_info_img_name {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inter-regular;
+  color: #bababa;
+  text-align: start;
+}
+
+.footer_info_img_con {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.footer_info_img {
+  width: 81px;
+  height: 86px;
+  background-color: black;
+}
+
+.footer_info_social {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  width: 100%;
+  max-width: 273px;
+}
+
+.footer_info_social_title {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: inter-regular;
+  color: white;
+}
+
+.footer_info_social_links {
+  display: flex;
+  gap: 29px;
+  align-items: center;
+}
+
+.footer_info_contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 347px;
+}
+
+.footer_info_phone_con {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.footer_info_phone {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: inter-regular;
+  text-align: end;
+}
+
+.footer_info_phone_name {
+  color: #fcb13f;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: inter-regular;
+  text-align: end;
+}
+
+.footer_info_data_con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer_info_data {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  max-width: 200px;
+}
+
+.footer_info_data:last-child {
+  margin-bottom: 0;
+}
+
+.footer_info_data_text {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-transform: lowercase;
+}

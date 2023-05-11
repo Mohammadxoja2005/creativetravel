@@ -1,0 +1,51 @@
+.travel {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.travel_container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.travel_title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: cur-bold;
+  text-transform: capitalize;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+.travel_title_highlight {
+  color: #fcb13f;
+}
+
+.travel_cities_cont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  //   gap: 18px;
+}
+
+.travel_city {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 386px;
+  height: 610px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 17px 27px;
+}
+
+.travel_city_name {
+  font-size: 36px;
+  color: white;
+  font-family: cur-bold;
+  font-weight: 700;
+}

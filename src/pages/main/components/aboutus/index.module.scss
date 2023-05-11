@@ -1,0 +1,53 @@
+.aboutus {
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.aboutus_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.aboutus_info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.aboutus_title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: cur-bold;
+  max-width: 500px;
+}
+
+.aboutus_title_highlight {
+  color: #fcb13f;
+}
+
+.aboutus_des {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: inter-regular;
+  max-width: 660px;
+}
+
+.aboutus_nowmore {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: inter-semibold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.aboutus_img {
+  width: 100%;
+  max-width: 554px;
+  height: 551px;
+  border-radius: 20px;
+  background-color: black;
+}
