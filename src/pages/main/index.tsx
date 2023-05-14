@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Fragment } from 'react';
 
 import HEADER from '../../layouts/header';
 import FILTER from '../../layouts/filter';
@@ -9,14 +9,14 @@ import FOOTER from '../../layouts/footer';
 
 const MAIN = () => {
     return (
-        <>
+        <Fragment>
             <HEADER />
             <FILTER />
             <TRAVEL />
             <ABOUTUS />
             <SUB />
             <FOOTER />
-        </>
+        </Fragment>
     )
 }
 
