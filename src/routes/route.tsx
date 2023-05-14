@@ -5,6 +5,7 @@ import ABOUT from "../pages/about";
 import TOUR from "../pages/tour/indext";
 import TOURS from "../pages/tours";
 import CONTACT from "../pages/contact";
+import GALLERY from "../pages/gallery";
 
 export const routes = createBrowserRouter([
     {
@@ -26,5 +27,9 @@ export const routes = createBrowserRouter([
     {
         path: "/contact",
         element: <CONTACT />
+    },
+    {
+        path: "/gallery",
+        element: <GALLERY />
     },
 ]) 
