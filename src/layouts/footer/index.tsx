@@ -68,8 +68,9 @@ const FOOTER: FC = () => {
                     </div>
 
                 </div>
-                <div>
-                    <p></p>
+
+                <div className={styles.footer_rights}>
+                    <p className={styles.footer_rights_name}>© 2022 Creative Travel All rights reserved.</p>
                 </div>
             </div>
         </footer>

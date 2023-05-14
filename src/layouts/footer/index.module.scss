@@ -18,7 +18,12 @@
   width: 100%;
   max-width: 1280px;
   margin: auto;
+  margin-bottom: 55px;
 }
+
+// .footer_info > div {
+//   border: 1px solid red;
+// }
 
 .footer_info_nav_con {
   display: flex;
@@ -43,12 +48,10 @@
 .footer_info_imgs {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   gap: 25px;
-  width: 100%;
-  max-width: 296px;
-  border-left: 1px solid red;
-  border-right: 1px solid red;
+  // width: 100%;
+  // max-width: 296px;
 }
 
 .footer_info_img_name {
@@ -144,4 +147,16 @@
   font-weight: 400;
   color: white;
   text-transform: lowercase;
+}
+
+.footer_rights {
+  border-top: 1px solid #363636;
+  padding-top: 10px;
+}
+
+.footer_rights_name {
+  font-weight: 400;
+  font-family: inter-regular;
+  color: white;
+  font-size: 14px;
 }

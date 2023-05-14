@@ -4,7 +4,7 @@ import HEADER from '../../layouts/header';
 import FILTER from '../../layouts/filter';
 import TRAVEL from './components/travel';
 import ABOUTUS from './components/aboutus';
-import SUB from './components/sub';
+import SUB from '../../layouts/sub';
 import FOOTER from '../../layouts/footer';
 
 const MAIN = () => {
