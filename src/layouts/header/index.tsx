@@ -3,6 +3,8 @@ import styles from "./index.module.scss";
 
 import LOGO from "../../assets/img/logo.png";
 import PHONE from "../../assets/icons/phone.png";
+// react-router-dom
+import { Link } from 'react-router-dom';
 
 const HEADER: FC = () => {
     const [language, setLanguage] = useState(false);
@@ -28,9 +30,9 @@ const HEADER: FC = () => {
 
                 <div className={styles.header_menu}>
                     <div className={styles.header_menu_container}>
-                        <a className={styles.header_menu_link_href} href="#">Туры</a>
-                        <a className={styles.header_menu_link_href} href="#">О нас</a>
-                        <a className={styles.header_menu_link_href} href="#">Галлерея</a>
+                        <Link className={styles.header_menu_link_href} to="/tours">Туры</Link>
+                        <Link className={styles.header_menu_link_href} to="/about">О нас</Link>
+                        <Link className={styles.header_menu_link_href} to="/gallery">Галлерея</Link>
                     </div>
 
                     <div className={styles.header_menu_lan} onClick={() => setLanguage(prev => !prev)}>
