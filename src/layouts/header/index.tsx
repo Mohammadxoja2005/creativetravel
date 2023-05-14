@@ -14,7 +14,7 @@ const HEADER: FC = () => {
             <div className={styles.header_container}>
 
                 <div className={styles.header_logo_container}>
-                    <img src={LOGO} alt="creative travel logo" />
+                    <Link to="/"><img src={LOGO} alt="creative travel logo" /></Link>
 
                     <div className={styles.header_logo_contact}>
                         <img src={PHONE} alt="header phone icon" />
