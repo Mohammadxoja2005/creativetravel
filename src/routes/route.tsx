@@ -6,6 +6,7 @@ import TOUR from "../pages/tour/indext";
 import TOURS from "../pages/tours";
 import CONTACT from "../pages/contact";
 import GALLERY from "../pages/gallery";
+import ADMIN from "../pages/admin";
 
 export const routes = createBrowserRouter([
     {
@@ -31,5 +32,9 @@ export const routes = createBrowserRouter([
     {
         path: "/gallery",
         element: <GALLERY />
+    },
+    {
+        path: "/admin",
+        element: <ADMIN />
     },
 ]) 
