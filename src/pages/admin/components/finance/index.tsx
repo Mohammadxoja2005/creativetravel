@@ -45,7 +45,7 @@ const FINANCE: FC = () => {
 
                             <div className={styles.finance_info_sum_col} >
                                 <div className={styles.finance_info_sum}>
-                                    <h3 className={styles.finance_info_title} style={{color: "red"}}>0 сумм</h3>
+                                    <h3 className={styles.finance_info_title} style={{ color: "red" }}>0 сумм</h3>
                                     <p className={styles.finance_info_text}>Лимит на новые невозвратные заказы</p>
                                 </div>
                                 <div className={styles.finance_info_sum}>

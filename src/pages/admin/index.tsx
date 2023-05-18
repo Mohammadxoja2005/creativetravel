@@ -5,6 +5,8 @@ import FILTER from '../../layouts/filter'
 import HEADER from './components/header';
 import PAYMENTINFO from './components/paymentInformation';
 import FINANCE from './components/finance';
+import BLOG from './components/blog';
+import FOOTER from './components/footer';
 
 const ADMIN: FC = () => {
     return (
@@ -13,6 +15,8 @@ const ADMIN: FC = () => {
             <FILTER />
             <PAYMENTINFO />
             <FINANCE />
+            <BLOG />
+            <FOOTER/>
         </Fragment>
     )
 }
