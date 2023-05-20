@@ -16,10 +16,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1280px;
   margin: auto;
   margin-bottom: 55px;
 }
+
+// .footer_info > div {
+//   flex:  1 1 25%;
+// }
 
 .footer_info_nav_con {
   display: flex;
@@ -65,7 +68,8 @@
 }
 
 .footer_info_img {
-  width: 81px;
+  max-width: 81px;
+  min-width: 81px;
   height: 86px;
   background-color: black;
 }
@@ -74,8 +78,8 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  width: 100%;
-  max-width: 273px;
+  // width: 100%;
+  // max-width: 273px;
 }
 
 .footer_info_social_title {
@@ -94,8 +98,8 @@
 .footer_info_contact {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 347px;
+  // width: 100%;
+  // max-width: 347px;
 }
 
 .footer_info_phone_con {
@@ -155,4 +159,93 @@
   font-family: inter-regular;
   color: white;
   font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer_info {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer_info > div:nth-child(2) {
+    order: 4;
+    flex-basis: 100%;
+    max-width: 243px;
+  }
+
+  .footer_info_img {
+    min-width: 0;
+  }
+
+  .footer_info > div:nth-child(4) {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .footer_info_phone {
+    text-align: start;
+  }
+
+  .footer_info_phone_name {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding-bottom: 32px;
+  }
+
+  .footer_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+  }
+
+  .footer_info_imgs {
+    width: 100%;
+    max-width: 273px;
+  }
+
+  .footer_info_img {
+    // width: 81px;
+  }
+
+  .footer_info_nav {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer_info_nav_link {
+    font-size: 18px;
+  }
+
+  .footer_info_nav_con {
+    align-items: center;
+  }
+
+  .footer_info_nav_con > img {
+    width: 203px;
+    height: 59px;
+  }
+
+  .footer_info_phone {
+    text-align: center;
+  }
+
+  .footer_info_phone_name {
+    text-align: center;
+  }
+
+  .footer_rights {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_rights_name {
+    font-size: 11px;
+  }
 }
