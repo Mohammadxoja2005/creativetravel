@@ -16,7 +16,7 @@ const ADMIN: FC = () => {
             <PAYMENTINFO />
             <FINANCE />
             <BLOG />
-            <FOOTER/>
+            <FOOTER />
         </Fragment>
     )
 }

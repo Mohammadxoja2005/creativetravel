@@ -52,5 +52,36 @@
 }
 
 .footer_info {
+  //   display: flex;
+  //   justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.footer_info_des_con {
   display: flex;
+  flex-direction: column;
+}
+
+.footer_info_name {
+  font-weight: 500;
+  font-family: inter-regular;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer_info_des {
+  font-family: inter-regular;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6a6a6a;
+  margin-bottom: 40px;
+}
+
+.footer_info_detail {
+  font-family: inter-regular;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6a6a6a;
 }

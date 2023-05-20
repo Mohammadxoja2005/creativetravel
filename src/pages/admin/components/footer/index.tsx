@@ -24,19 +24,28 @@ const FOOTER: FC = () => {
                     </div>
                 </div>
 
-                <div className={styles.footer_info}>
-                    <div className={styles.footer_info_safety}>
-                        <h2 className={styles.footer_info_name}>Безопасность</h2>
-                        <h3 className={styles.footer_info_des}>Наши партнёры по проведению платежей гарантируют безопасность ваших данных.</h3>
-                        <p className={styles.footer_info_detail} >Leaside Services Limited, reg.no HE342401, Business Address: 17 Karaiskaki Street, Office 22, Agaia Triada, Limassol, Cyprus, 3032 EMERGING TRAVEL UK LIMITED, Company number 12185384, Business Address: 6 Red Barn Mews, Battle, East Sussex, TN33 0AG Emerging Travel Germany ETG GmbH, HRB 213546, Business Address: Friedrichstraße 171, 10117 Berlin</p>
-                        <p className={styles.footer_info_detail} >Политика хранения и обработки персональных данных</p>
+                <div className={styles.footer_info_con}>
+                    <div className={styles.footer_info}>
+                        <div className={styles.footer_info_des_con}>
+                            <h2 className={styles.footer_info_name}>Безопасность</h2>
+                            <h3 className={styles.footer_info_des}>Наши партнёры по проведению платежей гарантируют безопасность ваших данных.</h3>
+                        </div>
+
+                        <div className={styles.footer_info_des_con}>
+                            <h2 className={styles.footer_info_name}>Программа лояльности</h2>
+                            <h3 className={styles.footer_info_des}>Становитесь постоянным клиентом RateHawk.com, бронируйте с выгодой и получайте кешбэк баллами в программе лояльности. Баллами можно оплатить следующие бронирования.</h3>
+                        </div>
                     </div>
 
-                    <div className={styles.footer_info_loyal}>
-                        <h2 className={styles.footer_info_name}>Программа лояльности</h2>
-                        <h3 className={styles.footer_info_des}>Становитесь постоянным клиентом RateHawk.com, бронируйте с выгодой и получайте кешбэк баллами в программе лояльности. Баллами можно оплатить следующие бронирования.</h3>
-                        <p className={styles.footer_info_detail}>Кредитная политика</p>
-                        <p className={styles.footer_info_detail}>Asia/Samarkand UTC +5</p>
+                    <div className={styles.footer_info}>
+                        <div className={styles.footer_info_des_con}>
+                            <p className={styles.footer_info_detail} style={{ marginBottom: "20px" }} >Leaside Services Limited, reg.no HE342401, Business Address: 17 Karaiskaki Street, Office 22, Agaia Triada, Limassol, Cyprus, 3032 EMERGING TRAVEL UK LIMITED, Company number 12185384, Business Address: 6 Red Barn Mews, Battle, East Sussex, TN33 0AG Emerging Travel Germany ETG GmbH, HRB 213546, Business Address: Friedrichstraße 171, 10117 Berlin</p>
+                            <p className={styles.footer_info_detail} >Политика хранения и обработки персональных данных</p>
+                        </div>
+                        <div className={styles.footer_info_des_con}>
+                            <p className={styles.footer_info_detail} style={{ marginBottom: "10px" }}>Кредитная политика</p>
+                            <p className={styles.footer_info_detail}>Asia/Samarkand UTC +5</p>
+                        </div>
                     </div>
                 </div>
             </div>

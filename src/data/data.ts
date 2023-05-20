@@ -57,3 +57,21 @@ export const tourContent: Array<{ id: number, content: string }> = [
     },
 ]
 
+export const routesArr: Array<{ id: number, name: string, value: string }> = [
+    {
+        id: 1,
+        name: "Только туда",
+        value: "1"
+    },
+    {
+        id: 2,
+        name: "Туда-обратно",
+        value: "2"
+    },
+    {
+        id: 3,
+        name: "Сложный маршрут",
+        value: "3"
+    }
+]
+

@@ -4,7 +4,8 @@ import styles from "./index.module.scss";
 // headless ui
 import { Menu } from '@headlessui/react';
 // components
-import FILTERITEMS from './filterItems';
+import FILTERBYHOTEL from './filterByHotel';
+import FILTERBYFLY from './filterByFly';
 
 const FILTER: FC = () => {
 
@@ -35,7 +36,7 @@ const FILTER: FC = () => {
                         </Menu.Button>
                     </div>
                 </Menu>
-                <FILTERITEMS />
+                <FILTERBYFLY />
             </div>
         </section>
     )

@@ -7,7 +7,7 @@ import Calendar from 'react-calendar';
 // icons
 import DOWN from "../../../assets/icons/down.png";
 
-const FILTERITEMS: FC = () => {
+const FILTERBYHOTEL: FC = () => {
 
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [calendarValue, setCalendarValue] = useState<Date>(new Date());
@@ -197,4 +197,4 @@ const FILTERITEMS: FC = () => {
     )
 }
 
-export default FILTERITEMS
+export default FILTERBYHOTEL;
