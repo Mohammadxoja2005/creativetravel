@@ -6,6 +6,8 @@ import { Menu } from '@headlessui/react';
 // components
 import FILTERBYHOTEL from './filterByHotel';
 import FILTERBYFLY from './filterByFly';
+import FILTERBYTRANSFER from './filterByTransfer';
+import FILTERBYAUTO from './filterByAuto';
 
 const FILTER: FC = () => {
 
@@ -36,7 +38,7 @@ const FILTER: FC = () => {
                         </Menu.Button>
                     </div>
                 </Menu>
-                <FILTERBYFLY />
+                <FILTERBYAUTO />
             </div>
         </section>
     )
