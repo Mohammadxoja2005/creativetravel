@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from "react-router-dom";
 import { routes } from './routes/route';  
 import 'react-calendar/dist/Calendar.css';
+import "swiper/css"; 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
