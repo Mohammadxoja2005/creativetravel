@@ -13,7 +13,7 @@ const ABOUTUS: FC = () => {
                 </div>
 
                 <div className={styles.aboutus_img}>
-                    
+
                 </div>
 
             </div>

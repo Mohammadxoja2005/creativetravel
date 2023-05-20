@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: auto;
   margin-bottom: 150px;
+  padding-right: 20px;
 }
 
 .sub_container {
@@ -24,6 +25,7 @@
   display: flex;
   flex-direction: column;
   gap: 29px;
+  margin-right: 20px;
 }
 
 .sub_form_title {
@@ -41,7 +43,8 @@
 }
 
 .sub_form_input {
-  width: 442px;
+  width: 100%;
+  max-width: 442px;
   border: 1px solid #6a6a6a;
   outline: none;
   padding: 22px 23px;
@@ -71,4 +74,55 @@
   font-family: inter-regular;
   font-weight: 400;
   font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+  .sub_container {
+    gap: 23px;
+  }
+
+  .sub_img {
+    height: 511px;
+  }
+
+  .sub_form_title {
+    font-size: 42px;
+  }
+
+  .sub_form_btn {
+    font-size: 32px;
+  }
+
+  .sub_form_agreement {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub_form_con {
+    padding-left: 20px;
+  }
+
+  .sub_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sub_form_title {
+    font-size: 32px;
+  }
+
+  .sub_form_input::placeholder {
+    font-size: 15px;
+  }
+
+  .sub_form_agreement {
+    font-size: 11px;
+  }
+
+  .sub_form_btn {
+    font-size: 24px;
+  }
 }

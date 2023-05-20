@@ -12,10 +12,10 @@ const MAIN = () => {
         <Fragment>
             {/* <HEADER /> */}
             {/* <FILTER /> */}
-            <TRAVEL />
-            {/* <ABOUTUS />
-            <SUB />
-            <FOOTER /> */}
+            {/* <TRAVEL /> */}
+            {/* <ABOUTUS /> */}
+            {/* <SUB /> */}
+            <FOOTER />
         </Fragment>
     )
 }

@@ -2,14 +2,15 @@
   max-width: 1440px;
   margin: auto;
   margin-bottom: 150px;
+  padding: 0 20px;
 }
 
 .aboutus_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 1280px;
   margin: auto;
+  gap: 23px;
 }
 
 .aboutus_info {
@@ -23,6 +24,7 @@
   font-weight: 700;
   font-family: cur-bold;
   max-width: 500px;
+  line-height: 100%;
 }
 
 .aboutus_title_highlight {
@@ -46,8 +48,57 @@
 
 .aboutus_img {
   width: 100%;
-  max-width: 554px;
   height: 551px;
   border-radius: 20px;
   background-color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutus_title {
+    font-size: 42px;
+  }
+
+  .aboutus_des {
+    font-size: 14px;
+  }
+
+  .aboutus_nowmore {
+    font-size: 18px;
+  }
+
+  .aboutus_img {
+    // max-width: 450px;
+    height: 470px;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  .aboutus_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+} 
+
+@media screen and (max-width: 576px) {
+
+  .aboutus_info {
+    gap: 18px;
+  }
+
+  .aboutus_title {
+    font-size: 32px;
+  } 
+
+  .aboutus_des {
+    font-size: 13px;
+  } 
+
+  .aboutus_nowmore {
+    font-size: 15px;
+  } 
+
+  .aboutus_img {
+    // max-width: 450px;
+    height: 350px;
+  }
 }
