@@ -91,100 +91,91 @@ const FILTERBYAUTO: FC = () => {
 
             {/* ====================================================================================================== */}
 
-            <div className={styles.filter_items_add_information}>
-                <h3 className={styles.filter_items_add_title}>Дополнительные сведения</h3>
-                <div className={styles.filter_items_time}>
+            <div className={styles.filter_items_contact_add_info}>
 
-                    <div className={styles.filter_items_input_container}>
-                        <h4 className={styles.filter_items_input_title} >Гражданство гостей</h4>
-                        <Listbox>
-                            <Listbox.Button className={styles.filter_items_list_show}>
-                                <p className={styles.filter_items_input}>{'Выберите свое гражданство'}</p>
-                                <img src={DOWN} alt="down" />
-                            </Listbox.Button>
-                            {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
-                    <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                    <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                </Listbox.Options> */}
-                        </Listbox>
-                    </div>
+                <div className={styles.filter_items_add_information}>
+                    <h3 className={styles.filter_items_add_title}>Дополнительные сведения</h3>
+                    <div className={styles.filter_items_time}>
 
-                    <div className={styles.filter_items_input_container}>
-                        <h4 className={styles.filter_items_input_title} >Ранний заезд</h4>
-                        <Listbox>
-                            <Listbox.Button onClick={() => setOpenCalendar(true)} className={styles.filter_items_list_show}>
-                                <p className={styles.filter_items_input}>{'Сб, 8 апреля 2023 г.'}</p>
-                            </Listbox.Button>
-                            {/* {openCalendar
-                    ?
-                    <div className={styles.filter_calendar_container}>
-                        <Calendar onChange={(e: any) => chooseCalendarValue(e)} value={calendarValue} />
-                    </div>
-                    : null} */}
-                        </Listbox>
-                    </div>
-
-                    <div className={styles.filter_items_input_container}>
-                        <h4 className={styles.filter_items_input_title} >Ранний заезд</h4>
-                        <Listbox>
-                            <Listbox.Button onClick={() => setOpenCalendar(true)} className={styles.filter_items_list_show}>
-                                <p className={styles.filter_items_input}>{'Чт, 13 апреля 2023 г.'}</p>
-                            </Listbox.Button>
-                            {/* {openCalendar
-                    ?
-                    <div className={styles.filter_calendar_container}>
-                        <Calendar onChange={(e: any) => chooseCalendarValue(e)} value={calendarValue} />
-                    </div>
-                    : null} */}
-                        </Listbox>
-                    </div>
-
-
-                    <div className={styles.filter_items_input_container}>
-                        <h4 className={styles.filter_items_input_title} >Взрослые</h4>
-                        <div className={styles.filter_items_list_show}>
-                            <img className={styles.filter_items_sign} src={MINUS} alt="minus" />
-                            <input type="text" className={styles.filter_items_input_age} value={"1"} />
-                            <img className={styles.filter_items_sign} src={PLUS} alt="plus" />
+                        <div className={styles.filter_items_input_container}>
+                            <h4 className={styles.filter_items_input_title} >Тип автомобиля</h4>
+                            <Listbox>
+                                <Listbox.Button className={styles.filter_items_list_show}>
+                                    <p className={styles.filter_items_input}>{'S-класс'}</p>
+                                    <img src={DOWN} alt="down" />
+                                </Listbox.Button>
+                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+        <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
+        <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
+    </Listbox.Options> */}
+                            </Listbox>
                         </div>
-                    </div>
-                    <div className={styles.filter_items_input_container}>
-                        <h4 className={styles.filter_items_input_title} >Дети (2-12 лет)</h4>
-                        <div className={styles.filter_items_list_show}>
-                            <img className={styles.filter_items_sign} src={MINUS} alt="minus" />
-                            <input type="text" className={styles.filter_items_input_age} value={"0"} />
-                            <img className={styles.filter_items_sign} src={PLUS} alt="plus" />
+
+                        <div className={styles.filter_items_input_container}>
+                            <h4 className={styles.filter_items_input_title} >Тип сцепления</h4>
+                            <Listbox>
+                                <Listbox.Button className={styles.filter_items_list_show}>
+                                    <p className={styles.filter_items_input}>{'Автомат'}</p>
+                                    <img src={DOWN} alt="down" />
+                                </Listbox.Button>
+                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+        <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
+        <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
+    </Listbox.Options> */}
+                            </Listbox>
                         </div>
-                    </div>
-                    <div className={styles.filter_items_input_container}>
-                        <h4 className={styles.filter_items_input_title} >Младенцы</h4>
-                        <div className={styles.filter_items_list_show}>
-                            <img className={styles.filter_items_sign} src={MINUS} alt="minus" />
-                            <input type="text" className={styles.filter_items_input_age} value={"0"} />
-                            <img className={styles.filter_items_sign} src={PLUS} alt="plus" />
+
+                        <div className={styles.filter_items_input_container}>
+                            <h4 className={styles.filter_items_input_title} >Кол-во пассажиров</h4>
+                            <div className={styles.filter_items_list_show}>
+                                <img className={styles.filter_items_sign} src={MINUS} alt="minus" />
+                                <input type="text" className={styles.filter_items_input_age} value={"1"} />
+                                <img className={styles.filter_items_sign} src={PLUS} alt="plus" />
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <Menu>
-                    <div className={styles.filter_items_add_stars}>
-                        <div className={styles.filter_items_add_checkbox_con}>
-                            <input type="checkbox" className={styles.filter_items_add_checkbox} />
-                            <p className={styles.filter_items_add_text}>Детское кресло</p>
+                <div className={styles.filter_items_add_information}>
+                    <h3 className={styles.filter_items_add_title}>Контактная информация</h3>
+                    <div className={styles.filter_items_time}>
+
+                        <div className={styles.filter_items_input_container}>
+                            <h4 className={styles.filter_items_input_title} >Имя и фамилия</h4>
+                            <input type="text" value={'Джон Дое'} className={styles.filter_items_input} />
                         </div>
 
-                        <div className={styles.filter_items_add_checkbox_con}>
-                            <input type="checkbox" className={styles.filter_items_add_checkbox} />
-                            <p className={styles.filter_items_add_text}>GPS</p>
+                        <div className={styles.filter_items_input_container}>
+                            <h4 className={styles.filter_items_input_title} >Адрес электронной почты</h4>
+                            <input type="text" value={'johndoe@gmail.com'} className={styles.filter_items_input} />
                         </div>
 
-                        <div className={styles.filter_items_add_checkbox_con}>
-                            <input type="checkbox" className={styles.filter_items_add_checkbox} />
-                            <p className={styles.filter_items_add_text}>Зимние шины</p>
+                        <div className={styles.filter_items_input_container}>
+                            <h4 className={styles.filter_items_input_title} >Контактный телефон</h4>
+                            <input type="text" value={'+998 (90) 555-55-55'} className={styles.filter_items_input} />
                         </div>
                     </div>
-                </Menu>
+                </div>
             </div>
+
+            <Menu>
+                <div className={styles.filter_items_add_stars}>
+                    <div className={styles.filter_items_add_checkbox_con}>
+                        <input type="checkbox" className={styles.filter_items_add_checkbox} />
+                        <p className={styles.filter_items_add_text}>Детское кресло</p>
+                    </div>
+
+                    <div className={styles.filter_items_add_checkbox_con}>
+                        <input type="checkbox" className={styles.filter_items_add_checkbox} />
+                        <p className={styles.filter_items_add_text}>GPS</p>
+                    </div>
+
+                    <div className={styles.filter_items_add_checkbox_con}>
+                        <input type="checkbox" className={styles.filter_items_add_checkbox} />
+                        <p className={styles.filter_items_add_text}>Зимние шины</p>
+                    </div>
+                </div>
+            </Menu>
         </div>
     )
 }

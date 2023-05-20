@@ -53,6 +53,11 @@
   gap: 15px;
 }
 
+.filter_items_contact_add_info {
+  display: flex;
+  gap: 42px;
+}
+
 .filter_items_input_container {
   border: 1px solid #d7d7d7;
   border-radius: 8px;
@@ -99,7 +104,8 @@
 
 .filter_items_input_age {
   text-align: center;
-  max-width: 35px;
+  //   max-width: 35px;
+  max-width: 75px;
   outline: none;
   font-family: inter-regular;
   font-weight: 400;
