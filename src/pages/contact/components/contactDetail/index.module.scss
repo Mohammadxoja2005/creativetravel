@@ -4,14 +4,15 @@
   margin: auto;
   margin-top: 77px;
   margin-bottom: 150px;
+  padding: 0 20px;
 }
 
 .contact_container {
   width: 100%;
   max-width: 1280px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contact_detail {
@@ -57,4 +58,31 @@
   height: 553px;
   border-radius: 20px;
   background-color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .contact_title {
+    font-size: 42px;
+  }
+
+  .contact_map {
+    height: 477px;
+  }
+
+  .contact_detail {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-top: 32px;
+    margin-bottom: 90px;
+  }
+
+  .contact_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 }

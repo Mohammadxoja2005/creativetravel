@@ -6,7 +6,7 @@ const CONTACTDETAIL: FC = () => {
     return (
         <section className={styles.contact}>
             <div className={styles.contact_container}>
-                <div className={styles.contact_detail} >
+                <div className={styles.contact_detail}>
                     <h1 className={styles.contact_title}>Контакты</h1>
 
                     <div className={styles.contact_detail_info_con} >
@@ -31,7 +31,7 @@ const CONTACTDETAIL: FC = () => {
                 </div>
 
                 <div className={styles.contact_map}>
-                    
+
                 </div>
             </div>
         </section>
