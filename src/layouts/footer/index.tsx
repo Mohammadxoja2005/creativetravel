@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
 import styles from "./index.module.scss";
-import LOGO from "../../assets/img/footer_logo.png";
-// social
+// icons
 import INSTAGRAM from "../../assets/icons/instagram.png";
 import FACEBOOK from "../../assets/icons/facebook.png";
 import VK from "../../assets/icons/vk.png";
 import EMAIL from "../../assets/icons/email.png";
 import LOCATION from "../../assets/icons/location.png";
+import LOGO from "../../assets/img/footer_logo.png";
 
 const FOOTER: FC = () => {
     return (
