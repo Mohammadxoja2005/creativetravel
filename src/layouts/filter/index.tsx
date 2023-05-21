@@ -22,7 +22,7 @@ const FILTER: FC = () => {
     return (
         <section className={styles.filter}>
             <div className={styles.filter_container}>
-                {/* <Menu>
+                <Menu>
                     <div className={styles.filter_sort_btn_container}>
                         <Menu.Button className={styles.filter_sort_btn}>
                             Отели
@@ -37,7 +37,7 @@ const FILTER: FC = () => {
                             Аренда авто
                         </Menu.Button>
                     </div>
-                </Menu> */}
+                </Menu>
                 <FILTERBYHOTEL />
             </div>
         </section>

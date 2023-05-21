@@ -25,4 +25,11 @@
   font-family: inter-regular;
   font-weight: 400;
   color: #6a6a6a;
+} 
+
+@media screen and (max-width: 768px) { 
+  .filter_sort_btn_container {
+    flex-wrap: wrap;
+  }
+  
 }
