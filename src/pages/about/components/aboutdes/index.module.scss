@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: auto;
   margin-bottom: 70px;
+  padding: 0 20px;
 }
 
 .aboutdes_container {
@@ -23,13 +24,25 @@
 }
 
 .aboutdes_info {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.aboutdes_info > div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  grid-row: 1 / 3;
+}
+
+.aboutdes_info > div:nth-child(3) {
+  grid-column: 2 / 3;
 }
 
 .aboutdes_info_img_person {
   width: 100%;
-  max-width: 581px;
+  // max-width: 581px;
   border-radius: 15px;
   background-color: black;
 }
@@ -46,13 +59,48 @@
   font-weight: 400;
   font-family: inter-regular;
   color: #222;
-  max-width: 602px;
+  max-width: 535px;
 }
 
 .aboutdes_info_benefit_img {
   width: 100%;
-  // max-width: 600px;
-  height: 341px;
   border-radius: 15px;
   background-color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutdes_title {
+    font-size: 24px;
+    margin-bottom: 13px;
+  }
+
+  .aboutdes_info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutdes_info > div:nth-child(1) {
+    height: 520px;
+    order: 2;
+  }
+
+  .aboutdes_info > div:nth-child(2) {
+    width: 100%;
+  }
+
+  .aboutdes_info_benefits {
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  .aboutdes_info > div:nth-child(3) {
+    height: 275px;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutdes_title {
+    font-size: 18px;
+  }
 }
