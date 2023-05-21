@@ -10,12 +10,12 @@ import FOOTER from '../../layouts/footer';
 const MAIN = () => {
     return (
         <Fragment>
-            <HEADER />
-            {/* <FILTER /> */}
-            <TRAVEL />
+            {/* <HEADER /> */}
+            <FILTER />
+            {/* <TRAVEL />
             <ABOUTUS />
             <SUB />
-            <FOOTER />
+            <FOOTER /> */}
         </Fragment>
     )
 }
