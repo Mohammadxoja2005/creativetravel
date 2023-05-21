@@ -74,6 +74,10 @@
     margin-bottom: 150px;
   }
 
+  .exc_img {
+    height: 535px;
+  }
+
   .exc_name {
     font-size: 44px;
   }
@@ -86,6 +90,10 @@
 @media screen and (max-width: 576px) {
   .exc {
     margin-bottom: 100px;
+  }
+
+  .exc_img {
+    height: 350px;
   }
 
   .exc_name {
