@@ -31,7 +31,6 @@ const EXCURSION: FC = () => {
                                 )
                             })}
                         </div>
-
                     </div>
                 </div>
 
