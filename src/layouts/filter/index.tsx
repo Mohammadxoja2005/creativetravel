@@ -38,7 +38,7 @@ const FILTER: FC = () => {
                         </Menu.Button>
                     </div>
                 </Menu> */}
-                <FILTERBYHOTEL />
+                <FILTERBYAUTO />
             </div>
         </section>
     )

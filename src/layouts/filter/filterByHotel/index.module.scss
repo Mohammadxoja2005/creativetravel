@@ -253,8 +253,7 @@
   .filter_items_dates_locations {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr;
-  } 
+  }
 
   .filter_items_basic_information {
     margin-bottom: 40px;
@@ -280,7 +279,6 @@
   .filter_items_time {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr;
   }
 
   .filter_items_time > div:nth-child(1) {
