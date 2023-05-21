@@ -87,6 +87,9 @@
   font-weight: 400;
   font-family: inter-regular;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter_items_time {
@@ -253,6 +256,10 @@
   .filter_items_dates_locations {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .filter_input_btn {
+    align-self: center;
   }
 
   .filter_items_basic_information {
