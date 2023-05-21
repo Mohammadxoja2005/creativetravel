@@ -13,12 +13,12 @@ import ADVANTAGE from './components/advantage';
 const ABOUT: FC = () => {
     return (
         <Fragment>
-            {/* <HEADER /> */}
-            {/* <ABOUTCOMPANY /> */}
+            <HEADER />
+            <ABOUTCOMPANY />
             <ABOUTDES />
-            {/* <ADVANTAGE />
+            <ADVANTAGE />
             <SUB />
-            <FOOTER /> */}
+            <FOOTER />
         </Fragment>
     )
 }

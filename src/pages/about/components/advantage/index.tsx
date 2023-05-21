@@ -84,7 +84,7 @@ const ADVANTAGE: FC = () => {
 
                 <div className={styles.ad_second_benefit}>
                     <div className={styles.ad_second_title_con}>
-                        <h2 className={styles.ad_second_title}>Преимущества</h2>
+                        <h2 className={styles.ad_second_title}>Преимущества при корпоративном сотрудничестве с «Creative Travel Group»</h2>
                         <p className={styles.ad_second_des}>Более подробную информацию вы можете получить у менеджеров .</p>
                     </div>
 
