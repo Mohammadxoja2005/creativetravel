@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react'
 // styles 
 import styles from "./index.module.scss";
-import { Menu, Transition, Listbox } from '@headlessui/react';
+import { Menu, Transition, Listbox, Combobox } from '@headlessui/react';
 // calendar 
 import Calendar from 'react-calendar';
 // icons
@@ -17,6 +17,20 @@ const FILTERBYHOTEL: FC = () => {
         setSelectedDate(event.target.value);
     };
 
+    const [geo, setGeo] = useState<string>('');
+    const [checkIn, setCheckin] = useState<string>();
+    const [checkOut, setCheckOut] = useState<string>();
+    const [numberOfGeusts, setNumberOfGuests] = useState<number>();
+    const [numberOfRooms, setNumberOfRooms] = useState<number>();
+    const [chooseCitizen, setChooseCitizen] = useState<string>('');
+    const [earlyCheckIn, setEarlyCheckIn] = useState<string>();
+    const [earlyCheckOut, setEarlyCheckOut] = useState<string>();
+    const [cat, setCat] = useState<string>();
+    const [star, setStar] = useState<number>();
+    const [freeCancel, setFreeCancel] = useState<boolean>();
+
+    console.log(geo);
+
     return (
         <>
             <div className={styles.filter_items}>
@@ -24,10 +38,21 @@ const FILTERBYHOTEL: FC = () => {
                     <h3 className={styles.filter_items_basic_title}>Основные сведения</h3>
                     <div className={styles.filter_items_dates_locations}>
 
-                        <div className={styles.filter_items_basic_input_container}>
-                            <h4 className={styles.filter_items_input_title} >Местоположение</h4>
-                            <input type="text" value={'Ташкент, Узбекистан'} className={styles.filter_items_input} />
-                        </div>
+                        <Combobox value={geo} onChange={setGeo}>
+                            <div className={styles.filter_items_basic_input_container}>
+                                <h4 className={styles.filter_items_input_title} >Местоположение</h4>
+                                <Combobox.Input
+                                    type="text"
+                                    className={styles.filter_items_input}
+                                    onChange={(e) => setGeo(e.target.value)}
+                                />
+                                <Combobox.Options className={styles.filter_items_listbox_geust_option}>
+                                    <Combobox.Option value={'Ташкент, Узбекистан'} className={styles.filter_items_listbox}>
+                                        {'Ташкент, Узбекистан'}
+                                    </Combobox.Option>
+                                </Combobox.Options>
+                            </div>
+                        </Combobox>
 
                         <div className={styles.filter_items_input_date_container}>
                             <div className={styles.filter_items_basic_input_container}>
@@ -95,19 +120,26 @@ const FILTERBYHOTEL: FC = () => {
 
                     <div className={styles.filter_items_time}>
 
-                        <div className={styles.filter_items_add_input_container}>
-                            <h4 className={styles.filter_items_input_title} >Гражданство гостей</h4>
-                            <Listbox>
+                        <Listbox value={chooseCitizen} onChange={setChooseCitizen}>
+                            <div className={styles.filter_items_add_input_container}>
+                                <h4 className={styles.filter_items_input_title} >Гражданство гостей</h4>
                                 <Listbox.Button className={styles.filter_items_list_show}>
-                                    <p className={styles.filter_items_input}>{'Выберите свое гражданство'}</p>
+                                    <p className={styles.filter_items_input}>{chooseCitizen.length == 0 ? 'Выберите свое гражданство' : chooseCitizen}</p>
                                     <img src={DOWN} alt="down" />
                                 </Listbox.Button>
-                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                        </Listbox.Options> */}
-                            </Listbox>
-                        </div>
+                                <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+                                    {[1, 2, 3, 4, 5, 6, 7].map((value) => {
+                                        return (
+                                            <Listbox.Option className={styles.filter_items_listbox} value={value}>
+                                                Uzbek
+                                            </Listbox.Option>
+                                        )
+                                    })
+
+                                    }
+                                </Listbox.Options>
+                            </div>
+                        </Listbox>
 
                         <div className={styles.filter_items_add_input_container}>
                             <h4 className={styles.filter_items_input_title} >Ранний заезд</h4>
@@ -201,10 +233,21 @@ const FILTERBYHOTEL: FC = () => {
                     <h3 className={styles.filter_items_basic_title}>Основные сведения</h3>
                     <div className={styles.filter_items_dates_locations}>
 
-                        <div className={styles.filter_items_basic_input_container}>
-                            <h4 className={styles.filter_items_input_title} >Местоположение</h4>
-                            <input type="text" value={'Ташкент, Узбекистан'} className={styles.filter_items_input} />
-                        </div>
+                        <Combobox value={geo} onChange={setGeo}>
+                            <div className={styles.filter_items_basic_input_container}>
+                                <h4 className={styles.filter_items_input_title} >Местоположение</h4>
+                                <Combobox.Input
+                                    type="text"
+                                    className={styles.filter_items_input}
+                                    onChange={(e) => setGeo(e.target.value)}
+                                />
+                                <Combobox.Options className={styles.filter_items_listbox_geust_option}>
+                                    <Combobox.Option value={'Ташкент, Узбекистан'} className={styles.filter_items_listbox}>
+                                        {'Ташкент, Узбекистан'}
+                                    </Combobox.Option>
+                                </Combobox.Options>
+                            </div>
+                        </Combobox>
 
                         <div className={styles.filter_items_input_date_container}>
                             <div className={styles.filter_items_basic_input_container}>
@@ -268,21 +311,26 @@ const FILTERBYHOTEL: FC = () => {
                     <h3 className={styles.filter_items_add_title}>Дополнительные сведения</h3>
 
                     <div className={styles.filter_items_time}>
-
-                        <div className={styles.filter_items_add_input_container}>
-                            <h4 className={styles.filter_items_input_title} >Гражданство гостей</h4>
-                            <Listbox>
+                        <Listbox value={chooseCitizen} onChange={setChooseCitizen}>
+                            <div className={styles.filter_items_add_input_container}>
+                                <h4 className={styles.filter_items_input_title} >Гражданство гостей</h4>
                                 <Listbox.Button className={styles.filter_items_list_show}>
-                                    <p className={styles.filter_items_input}>{'Выберите свое гражданство'}</p>
+                                    <p className={styles.filter_items_input}>{chooseCitizen.length == 0 ? 'Выберите свое гражданство' : chooseCitizen}</p>
                                     <img src={DOWN} alt="down" />
                                 </Listbox.Button>
-                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
-                <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-            </Listbox.Options> */}
-                            </Listbox>
-                        </div>
+                                <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+                                    {[1, 2, 3, 4, 5, 6, 7].map((value) => {
+                                        return (
+                                            <Listbox.Option className={styles.filter_items_listbox} value={value}>
+                                                Uzbek
+                                            </Listbox.Option>
+                                        )
+                                    })
 
+                                    }
+                                </Listbox.Options>
+                            </div>
+                        </Listbox>
                         <div className={styles.filter_items_add_input_container}>
                             <h4 className={styles.filter_items_input_title} >Ранний заезд</h4>
                             <Listbox>
@@ -371,7 +419,7 @@ const FILTERBYHOTEL: FC = () => {
                 <div className={styles.filter_input_btn}>
                     Найти
                 </div>
-            </div>
+            </div >
         </>
     )
 }

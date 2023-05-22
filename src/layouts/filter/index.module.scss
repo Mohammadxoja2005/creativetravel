@@ -27,6 +27,15 @@
   color: #6a6a6a;
 }
 
+.filter_sort_btn_selected {
+  @apply bg-white px-6 py-4 rounded-lg;
+  font-size: 18px;
+  font-family: inter-regular;
+  font-weight: 400;
+  color: #fcb13f;
+  outline: none;
+}
+
 @media screen and (max-width: 768px) {
   .filter_sort_btn_container {
     flex-wrap: wrap;

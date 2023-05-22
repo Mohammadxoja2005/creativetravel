@@ -75,3 +75,22 @@ export const routesArr: Array<{ id: number, name: string, value: string }> = [
     }
 ]
 
+export const filterSortData: Array<{ id: number, name: string }> = [
+    {
+        id: 1,
+        name: "Отели"
+    },
+    {
+        id: 2,
+        name: "Авиабилеты"
+    },
+    {
+        id: 3,
+        name: "Трансфер"
+    },
+    {
+        id: 4,
+        name: "Аренда авто"
+    },
+]
+
