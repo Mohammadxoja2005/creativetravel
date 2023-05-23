@@ -12,11 +12,11 @@ const ADMIN: FC = () => {
     return (
         <Fragment>
             <HEADER />
-            <FILTER />
+            {/* <FILTER />
             <PAYMENTINFO />
             <FINANCE />
             <BLOG />
-            <FOOTER />
+            <FOOTER /> */}
         </Fragment>
     )
 }
