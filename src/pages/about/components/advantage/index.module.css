@@ -1,0 +1,153 @@
+.ad {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 150px;
+  padding: 0 20px;
+}
+
+.ad_container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+}
+
+.ad_first_benefit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ad_first_title_con {
+  width: 100%;
+  max-width: 581px;
+}
+
+.ad_first_title {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: inter-semibold;
+  color: #222;
+}
+
+.ad_first_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ad_first_list_name {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inter-regular;
+  color: #222;
+  list-style: none;
+  display: flex;
+}
+
+.ad_bullet {
+  min-width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fcb13f;
+  margin-top: 6px;
+}
+
+.ad_bullet_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.ad_second_benefit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ad_second_title_con {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 581px;
+  gap: 20px;
+}
+
+.ad_second_title {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: inter-semibold;
+  color: #222;
+}
+
+.ad_second_des {
+  font-size: 18px;
+  color: #6a6a6a;
+  font-weight: 500;
+  font-family: inter-regular;
+}
+
+.ad_second_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ad_second_list_name {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inter-regular;
+  gap: 11px;
+}
+
+@media screen and (max-width: 992px) {
+  .ad_container {
+    gap: 80px;
+  }
+  .ad_first_benefit {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ad_second_benefit {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ad_first_title {
+    font-size: 24px;
+  }
+  .ad_second_title {
+    font-size: 24px;
+  }
+  .ad_first_des {
+    font-size: 16px;
+  }
+  .ad_second_des {
+    font-size: 16px;
+  }
+  .ad_first_list_name {
+    font-size: 16px;
+  }
+  .ad_second_list_name {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ad_first_title {
+    font-size: 18px;
+  }
+  .ad_second_title {
+    font-size: 18px;
+  }
+  .ad_second_des {
+    font-size: 14px;
+  }
+  .ad_first_list_name {
+    font-size: 14px;
+  }
+  .ad_second_list_name {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

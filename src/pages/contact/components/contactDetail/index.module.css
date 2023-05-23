@@ -1,0 +1,84 @@
+.contact {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 77px;
+  margin-bottom: 150px;
+  padding: 0 20px;
+}
+
+.contact_container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.contact_title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: cur-bold;
+}
+
+.contact_detail_info_con {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact_detail_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_info_name {
+  font-size: 21px;
+  font-weight: 500;
+  font-family: inter-semibold;
+}
+
+.contact_info_des {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inter-regular;
+  color: #6a6a6a;
+  max-width: 280px;
+}
+
+.contact_map {
+  width: 100%;
+  max-width: 731px;
+  height: 553px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .contact_title {
+    font-size: 42px;
+  }
+  .contact_map {
+    height: 477px;
+  }
+  .contact_detail {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-top: 32px;
+    margin-bottom: 90px;
+  }
+  .contact_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

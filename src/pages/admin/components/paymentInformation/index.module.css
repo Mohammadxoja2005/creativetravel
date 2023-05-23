@@ -1,0 +1,146 @@
+.payinfo {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  background-color: #f6f6f6;
+  padding: 0 20px;
+}
+
+.payinfo_con {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.payinfo_payment {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 43px;
+  padding: 24px 24px 58px 24px;
+  border-radius: 6px;
+  box-shadow: 0px 3.11284px 12.4514px rgba(0, 0, 0, 0.04);
+}
+
+.payinfo_name {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: inter-regular;
+  color: #6a6a6a;
+}
+
+.payinfo_nums {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.payinfo_num_con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.payinfo_price {
+  border: 7px solid #ededed;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6a6a6a;
+  font-size: 18px;
+  font-family: inter-semibold;
+  font-weight: 600;
+}
+
+.payinfo_num_name {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: inter-regular;
+  color: #333;
+  text-align: center;
+}
+
+.payinfo_cancel_con {
+  display: flex;
+  gap: 20px;
+}
+
+.payinfo_cancel {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background-color: white;
+  padding: 17px 52px 66px 26px;
+  border-radius: 6px;
+  box-shadow: 0px 3.11284px 12.4514px rgba(0, 0, 0, 0.04);
+}
+
+.payinfo_cancel_name {
+  color: #6a6a6a;
+  font-weight: 500;
+  font-size: 19px;
+  font-family: inter-regular;
+}
+
+.payinfo_cancel_deadline {
+  display: flex;
+  flex-direction: column;
+}
+
+.payinfo_cancel_times {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.payinfo_cancel_show {
+  color: #a6a6a6;
+  font-size: 42px;
+  font-weight: 400;
+  font-family: inter-regular;
+}
+
+.payinfo_cancel_text {
+  color: #a6a6a6;
+  font-family: inter-regular;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 165px;
+}
+
+@media screen and (max-width: 992px) {
+  .payinfo_con {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .payinfo_nums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 850px;
+  }
+  .payinfo_cancel_con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .payinfo_nums {
+    grid-template-columns: 1fr 1fr;
+  }
+  .payinfo_cancel {
+    gap: 45px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .payinfo_cancel_con {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=index.module.css.map */
