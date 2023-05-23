@@ -15,8 +15,8 @@ const ADMIN: FC = () => {
             <FILTER />
             <PAYMENTINFO />
             <FINANCE /> */}
-            <BLOG />
-            {/* <FOOTER /> */}
+            {/* <BLOG /> */}
+            <FOOTER />
         </Fragment>
     )
 }
