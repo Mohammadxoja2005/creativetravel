@@ -19,7 +19,7 @@ const HEADER: FC = () => {
         <header className={styles.header}>
             <div className={styles.header_con}>
                 <div className={styles.header_property_logo}>
-                    <img src={LOGO} alt="logo cretive travel" />
+                    <Link to={'/'}><img src={LOGO} alt="logo cretive travel" /></Link>
                     <div className={styles.header_links} >
                         <a href="#">Поиск</a>
                         <a href="#">Заказы</a>

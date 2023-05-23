@@ -35,13 +35,14 @@ const HEADER: FC = () => {
                         <Link className={styles.header_menu_link_href} to="/tours">Туры</Link>
                         <Link className={styles.header_menu_link_href} to="/about">О нас</Link>
                         <Link className={styles.header_menu_link_href} to="/gallery">Галлерея</Link>
+                        <Link className={styles.header_menu_link_href} to="/contact">Контакты</Link>
                     </div>
 
                     <div className={styles.header_menu_lan} onClick={() => setLanguage(prev => !prev)}>
                         {language ? "Uz" : "Ру"}
                     </div>
 
-                    <div className={styles.header_menu_btn}>Войти</div>
+                    <Link to={'/admin'}><div className={styles.header_menu_btn}>Войти</div></Link>
                 </div>
             </div>
 
@@ -61,6 +62,7 @@ const HEADER: FC = () => {
                             <Link className={styles.header_menu_link_href} to="/tours">Туры</Link>
                             <Link className={styles.header_menu_link_href} to="/about">О нас</Link>
                             <Link className={styles.header_menu_link_href} to="/gallery">Галлерея</Link>
+                            <Link className={styles.header_menu_link_href} to="/contact">Контакты</Link>
                         </div>
 
                         <div className={styles.header_menu_login}>
@@ -68,7 +70,7 @@ const HEADER: FC = () => {
                                 {language ? "Uz" : "Ру"}
                             </div>
 
-                            <div className={styles.header_menu_btn}>Войти</div>
+                            <Link to={'/admin'}><div className={styles.header_menu_btn}>Войти</div></Link>
                         </div>
                     </div>
                     : null}
