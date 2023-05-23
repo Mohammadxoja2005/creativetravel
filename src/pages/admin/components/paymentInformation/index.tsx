@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 // styles
 import styles from "./index.module.scss";
 
-const PAYMENTINFO = () => {
+const PAYMENTINFO: FC = () => {
     return (
         <section className={styles.payinfo}>
             <div className={styles.payinfo_con}>
@@ -36,36 +36,36 @@ const PAYMENTINFO = () => {
                 </div>
 
                 <div className={styles.payinfo_cancel_con}>
-                <div className={styles.payinfo_cancel}>
-                    <h2 className={styles.payinfo_cancel_name}>Бесплатная отмена</h2>
+                    <div className={styles.payinfo_cancel}>
+                        <h2 className={styles.payinfo_cancel_name}>Бесплатная отмена</h2>
 
-                    <div className={styles.payinfo_cancel_deadline}>
-                        <div className={styles.payinfo_cancel_times}>
-                            <p className={styles.payinfo_cancel_show}>0</p>
-                            <p className={styles.payinfo_cancel_text}>Заканчивается через 24 часа</p>
+                        <div className={styles.payinfo_cancel_deadline}>
+                            <div className={styles.payinfo_cancel_times}>
+                                <p className={styles.payinfo_cancel_show}>0</p>
+                                <p className={styles.payinfo_cancel_text}>Заканчивается через 24 часа</p>
+                            </div>
+                            <div className={styles.payinfo_cancel_times}>
+                                <p className={styles.payinfo_cancel_show}>0</p>
+                                <p className={styles.payinfo_cancel_text}>Заканчивается через 4 рабочих дня</p>
+                            </div>
                         </div>
-                        <div className={styles.payinfo_cancel_times}>
-                            <p className={styles.payinfo_cancel_show}>0</p>
-                            <p className={styles.payinfo_cancel_text}>Заканчивается через 4 рабочих дня</p>
-                        </div>
+
                     </div>
 
-                </div>
+                    <div className={styles.payinfo_cancel}>
+                        <h2 className={styles.payinfo_cancel_name}>Автоотмена</h2>
 
-                <div className={styles.payinfo_cancel}>
-                    <h2 className={styles.payinfo_cancel_name}>Автоотмена</h2>
-
-                    <div className={styles.payinfo_cancel_deadline}>
-                        <div className={styles.payinfo_cancel_times}>
-                            <p className={styles.payinfo_cancel_show}>0</p>
-                            <p className={styles.payinfo_cancel_text}>Заканчивается через 24 часа</p>
-                        </div>
-                        <div className={styles.payinfo_cancel_times}>
-                            <p className={styles.payinfo_cancel_show}>0</p>
-                            <p className={styles.payinfo_cancel_text}>Заканчивается через 24 часа</p>
+                        <div className={styles.payinfo_cancel_deadline}>
+                            <div className={styles.payinfo_cancel_times}>
+                                <p className={styles.payinfo_cancel_show}>0</p>
+                                <p className={styles.payinfo_cancel_text}>Заканчивается через 24 часа</p>
+                            </div>
+                            <div className={styles.payinfo_cancel_times}>
+                                <p className={styles.payinfo_cancel_show}>0</p>
+                                <p className={styles.payinfo_cancel_text}>Заканчивается через 24 часа</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>

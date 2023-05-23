@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: auto;
   background-color: #f6f6f6;
+  padding: 0 20px;
 }
 
 .payinfo_con {
@@ -63,6 +64,7 @@
   font-weight: 400;
   font-family: inter-regular;
   color: #333;
+  text-align: center;
 }
 
 .payinfo_cancel_con {
@@ -111,4 +113,39 @@
   font-weight: 400;
   font-size: 16px;
   max-width: 165px;
+}
+
+@media screen and (max-width: 992px) {
+  .payinfo_con {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .payinfo_nums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 850px;
+  }
+
+  .payinfo_cancel_con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .payinfo_nums {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .payinfo_cancel {
+    gap: 45px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .payinfo_cancel_con {
+    grid-template-columns: 1fr;
+  }
 }
