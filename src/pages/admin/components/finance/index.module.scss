@@ -3,8 +3,7 @@
   max-width: 1440px;
   margin: auto;
   background-color: hsl(0, 0%, 96%);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 20px;
 }
 
 .finance_con {
@@ -74,4 +73,38 @@
   font-weight: 400;
   font-family: inter-regular;
   max-width: 250px;
+}
+
+@media screen and (max-width: 992px) {
+  .finance_title {
+    font-size: 24px;
+  }
+
+  .finance_info_con {
+    grid-template-columns: 1fr;
+  }
+
+  .finance_info_sum_con {
+    width: 100%;
+    margin: auto;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .finance_info_title {
+    font-size: 26px;
+  }
+
+  .finance_info_text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .finance_info_sum_con {
+    gap: 10px;
+  }
 }

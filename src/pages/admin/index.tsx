@@ -11,11 +11,11 @@ import FOOTER from './components/footer';
 const ADMIN: FC = () => {
     return (
         <Fragment>
-            {/* <HEADER /> */}
-            {/* <FILTER /> */}
+            <HEADER />
+            <FILTER />
             <PAYMENTINFO />
-            {/* <FINANCE />
-            <BLOG />
+            <FINANCE />
+            {/* <BLOG />
             <FOOTER /> */}
         </Fragment>
     )

@@ -3,6 +3,10 @@
   max-width: 1440px;
   margin: auto;
   padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
 }
 
 .header_con {
