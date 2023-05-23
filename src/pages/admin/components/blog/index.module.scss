@@ -4,6 +4,8 @@
   margin: auto;
   background-color: hsl(0, 0%, 96%);
   padding-bottom: 92px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .blog_con {
@@ -20,8 +22,8 @@
 }
 
 .blog_post_con {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 
