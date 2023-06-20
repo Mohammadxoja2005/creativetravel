@@ -184,6 +184,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .filter_items_add_line {
@@ -191,6 +192,15 @@
   width: 100%;
   max-width: 24px;
   border: 1px solid #d7d7d7;
+  bottom: 8px;
+  border-radius: 3px;
+} 
+
+.filter_items_add_line_highlight {
+  position: absolute;
+  width: 100%;
+  max-width: 24px;
+  border: 1px solid #fcb13f;
   bottom: 8px;
   border-radius: 3px;
 }

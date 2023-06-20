@@ -1,11 +1,13 @@
 import React, { FC, useState } from 'react'
 // styles 
 import styles from "./index.module.scss";
-import { Menu, Transition, Listbox, Combobox } from '@headlessui/react';
+import { Menu, Transition, Listbox, Combobox, RadioGroup } from '@headlessui/react';
 // calendar 
 import Calendar from 'react-calendar';
 // icons
 import DOWN from "../../../assets/icons/down.png";
+// data
+import { filterHotelType } from '../../../data/data';
 
 const FILTERBYHOTEL: FC = () => {
 
@@ -27,6 +29,8 @@ const FILTERBYHOTEL: FC = () => {
     const [earlyCheckOut, setEarlyCheckOut] = useState<string>();
     const [cat, setCat] = useState<string>();
     const [star, setStar] = useState<number>();
+    const [hotelType, setHotelType] = useState<string>(filterHotelType[0].value)
+    // const [checkedHotelType, setCheckedHotelType] = useS
     const [freeCancel, setFreeCancel] = useState<boolean>();
 
     return (
@@ -88,10 +92,15 @@ const FILTERBYHOTEL: FC = () => {
                                     <p className={styles.filter_items_input}>{'2 гостей'}</p>
                                     <img src={DOWN} alt="down" />
                                 </Listbox.Button>
-                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                        </Listbox.Options> */}
+                                <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+                                    {[1, 2, 3, 4, 5, 6, 7].map((value) => {
+                                        return (
+                                            <Listbox.Option className={styles.filter_items_listbox} value={value}>
+                                                2 Гостей
+                                            </Listbox.Option>
+                                        )
+                                    })}
+                                </Listbox.Options>
                             </Listbox>
                         </div>
 
@@ -102,10 +111,15 @@ const FILTERBYHOTEL: FC = () => {
                                     <p className={styles.filter_items_input}>{'2 номера'}</p>
                                     <img src={DOWN} alt="down" />
                                 </Listbox.Button>
-                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                        </Listbox.Options> */}
+                                <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+                                    {[1, 2, 3, 4, 5, 6, 7].map((value) => {
+                                        return (
+                                            <Listbox.Option className={styles.filter_items_listbox} value={value}>
+                                                2 Номера
+                                            </Listbox.Option>
+                                        )
+                                    })}
+                                </Listbox.Options>
                             </Listbox>
                         </div>
                     </div>
@@ -151,10 +165,6 @@ const FILTERBYHOTEL: FC = () => {
                                         )
                                     })}
                                 </Listbox.Options>
-                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                        </Listbox.Options> */}
                             </Listbox>
                         </div>
 
@@ -174,37 +184,34 @@ const FILTERBYHOTEL: FC = () => {
                                         )
                                     })}
                                 </Listbox.Options>
-                                {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                            <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
-                        </Listbox.Options> */}
                             </Listbox>
                         </div>
 
-                        <Menu>
+                        <RadioGroup value={hotelType} onChange={setHotelType}>
                             <div className={styles.filter_items_add_choose_btns}>
-                                <Menu.Button className={styles.filter_items_add_choose_btn}>
-                                    Ro
-                                    <div className={styles.filter_items_add_line} ></div>
-                                </Menu.Button>
-                                <Menu.Button className={styles.filter_items_add_choose_btn}>
-                                    BB
-                                    <div className={styles.filter_items_add_line} ></div>
-                                </Menu.Button>
-                                <Menu.Button className={styles.filter_items_add_choose_btn}>
-                                    hb
-                                    <div className={styles.filter_items_add_line} ></div>
-                                </Menu.Button>
-                                <Menu.Button className={styles.filter_items_add_choose_btn}>
-                                    fb
-                                    <div className={styles.filter_items_add_line} ></div>
-                                </Menu.Button>
-                                <Menu.Button className={styles.filter_items_add_choose_btn}>
-                                    ai
-                                    <div className={styles.filter_items_add_line} ></div>
-                                </Menu.Button>
+                                {filterHotelType.map((type) => {
+                                    return (
+                                        <div
+                                            key={type.id}
+                                            className={styles.filter_items_add_choose_btn}
+                                            onClick={() => setHotelType(type.value)}
+                                        >
+                                            {type.name}
+                                            <RadioGroup.Option
+                                                value={type.value}
+                                                className={({ active, checked }) =>
+                                                    `${checked ?
+                                                        [styles.filter_items_add_line_highlight]
+                                                        : [styles.filter_items_add_line]
+                                                    } `
+                                                }
+                                            >
+                                            </RadioGroup.Option>
+                                        </div>
+                                    )
+                                })}
                             </div>
-                        </Menu>
+                        </RadioGroup>
 
                     </div>
 
