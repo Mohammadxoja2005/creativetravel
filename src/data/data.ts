@@ -103,6 +103,34 @@ export const filterHotelType: Array<{ id: number, name: string, value: string }>
     }
 ]
 
+export const filterHotelStar: Array<{ id: number, name: string, value: number }> = [
+    {
+        id: 1,
+        name: "Без звёзд",
+        value: 0
+    },
+    {
+        id: 2,
+        name: "2 звезды",
+        value: 2
+    },
+    {
+        id: 3,
+        name: "3 звезды",
+        value: 3
+    },
+    {
+        id: 4,
+        name: "4 звезды",
+        value: 4
+    },
+    {
+        id: 5,
+        name: "5 звезды",
+        value: 5
+    },
+]
+
 export const filterSortData: Array<{ id: number, name: string }> = [
     {
         id: 1,

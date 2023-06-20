@@ -7,7 +7,7 @@ import Calendar from 'react-calendar';
 // icons
 import DOWN from "../../../assets/icons/down.png";
 // data
-import { filterHotelType } from '../../../data/data';
+import { filterHotelType, filterHotelStar } from '../../../data/data';
 
 const FILTERBYHOTEL: FC = () => {
 
@@ -28,7 +28,7 @@ const FILTERBYHOTEL: FC = () => {
     const [earlyCheckIn, setEarlyCheckIn] = useState<string>();
     const [earlyCheckOut, setEarlyCheckOut] = useState<string>();
     const [cat, setCat] = useState<string>();
-    const [star, setStar] = useState<number>();
+    const [star, setStar] = useState<number>(filterHotelStar[0].value);
     const [hotelType, setHotelType] = useState<string>(filterHotelType[0].value)
     // const [checkedHotelType, setCheckedHotelType] = useS
     const [freeCancel, setFreeCancel] = useState<boolean>();
@@ -215,35 +215,37 @@ const FILTERBYHOTEL: FC = () => {
 
                     </div>
 
-                    <Menu>
+                    <RadioGroup value={star} onChange={setStar}>
                         <div className={styles.filter_items_add_stars}>
-                            <Menu.Button className={styles.filter_items_add_star}>
-                                Без звёзд
-                                <div className={styles.filter_items_add_star_line} ></div>
-                            </Menu.Button>
-                            <Menu.Button className={styles.filter_items_add_star}>
-                                2 звезды
-                                <div className={styles.filter_items_add_star_line} ></div>
-                            </Menu.Button>
-                            <Menu.Button className={styles.filter_items_add_star}>
-                                3 звезды
-                                <div className={styles.filter_items_add_star_line} ></div>
-                            </Menu.Button>
-                            <Menu.Button className={styles.filter_items_add_star}>
-                                4 звезды
-                                <div className={styles.filter_items_add_star_line} ></div>
-                            </Menu.Button>
-                            <Menu.Button className={styles.filter_items_add_star}>
-                                5 звёзд
-                                <div className={styles.filter_items_add_star_line} ></div>
-                            </Menu.Button>
-
+                            {
+                                filterHotelStar.map((hotelStar) => {
+                                    return (
+                                        <div
+                                            key={hotelStar.id}
+                                            className={styles.filter_items_add_star}
+                                            onClick={() => setStar(hotelStar.value)}
+                                        >
+                                            {hotelStar.name}
+                                            <RadioGroup.Option
+                                                value={hotelStar.value}
+                                                className={({ active, checked }) =>
+                                                    `${checked ?
+                                                        [styles.filter_items_add_star_line_highlight]
+                                                        : [styles.filter_items_add_star_line]
+                                                    } `
+                                                }
+                                            >
+                                            </RadioGroup.Option>
+                                        </div>
+                                    )
+                                })
+                            }
                             <div className={styles.filter_items_add_checkbox_con}>
                                 <input type="checkbox" className={styles.filter_items_add_checkbox} />
                                 <p className={styles.filter_items_add_text}>Бесплатная отмена</p>
                             </div>
                         </div>
-                    </Menu>
+                    </RadioGroup>
                 </div>
                 <div className={styles.filter_input_btn}>
                     Найти
