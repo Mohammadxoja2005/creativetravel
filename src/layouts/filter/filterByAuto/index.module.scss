@@ -141,6 +141,8 @@
   align-items: center;
   justify-content: center;
   padding: 21px 42px;
+  max-width: 200px;
+  margin-top: 20px;
 }
 
 .filter_items_time {
@@ -265,9 +267,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .filter_items {
-    display: none;
-  }
 
   .filter_items_dates_locations {
     display: grid;

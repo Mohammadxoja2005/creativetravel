@@ -75,6 +75,34 @@ export const routesArr: Array<{ id: number, name: string, value: string }> = [
     }
 ]
 
+export const filterHotelType: Array<{ id: number, name: string, value: string }> = [
+    {
+        id: 1,
+        name: "Ro",
+        value: "Ro"
+    },
+    {
+        id: 2,
+        name: "BB",
+        value: "BB"
+    },
+    {
+        id: 3,
+        name: "hb",
+        value: "hb"
+    },
+    {
+        id: 4,
+        name: "fb",
+        value: "fb"
+    },
+    {
+        id: 5,
+        name: "ai",
+        value: "ai"
+    }
+]
+
 export const filterSortData: Array<{ id: number, name: string }> = [
     {
         id: 1,
