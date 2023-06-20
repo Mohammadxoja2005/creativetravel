@@ -74,6 +74,7 @@ const FILTERBYHOTEL: FC = () => {
                                 <input onClick={() => setOpenCalendar(true)} type="text" value={'17 марта 2023 г.'} className={styles.filter_items_input} />
                                 {/* <input onChange={handleChange} type="date" className={styles.filter_items_input} /> */}
                             </div>
+
                             {/* {openCalendar
                         ?
                         <div className={styles.filter_calendar_container}>
@@ -134,9 +135,7 @@ const FILTERBYHOTEL: FC = () => {
                                                 Uzbek
                                             </Listbox.Option>
                                         )
-                                    })
-
-                                    }
+                                    })}
                                 </Listbox.Options>
                             </div>
                         </Listbox>
@@ -148,6 +147,15 @@ const FILTERBYHOTEL: FC = () => {
                                     <p className={styles.filter_items_input}>{'Выберите время'}</p>
                                     <img src={DOWN} alt="down" />
                                 </Listbox.Button>
+                                <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+                                    {[1, 2, 3, 4, 5, 6, 7].map((value) => {
+                                        return (
+                                            <Listbox.Option className={styles.filter_items_listbox} value={value}>
+                                                13:00
+                                            </Listbox.Option>
+                                        )
+                                    })}
+                                </Listbox.Options>
                                 {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
                             <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
                             <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
@@ -162,6 +170,15 @@ const FILTERBYHOTEL: FC = () => {
                                     <p className={styles.filter_items_input}>{'Выберите время'}</p>
                                     <img src={DOWN} alt="down" />
                                 </Listbox.Button>
+                                <Listbox.Options className={styles.filter_items_listbox_geust_option}>
+                                    {[1, 2, 3, 4, 5, 6, 7].map((value) => {
+                                        return (
+                                            <Listbox.Option className={styles.filter_items_listbox} value={value}>
+                                                13:00
+                                            </Listbox.Option>
+                                        )
+                                    })}
+                                </Listbox.Options>
                                 {/* <Listbox.Options className={styles.filter_items_listbox_geust_option}>
                             <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>
                             <Listbox.Option value={'valie'} >ddasdfsa</Listbox.Option>

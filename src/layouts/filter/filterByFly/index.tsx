@@ -11,11 +11,10 @@ import MINUS from "../../../assets/icons/minus.png";
 import { routesArr } from '../../../data/data';
 
 const FILTERBYFLY: FC = () => {
-
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [calendarValue, setCalendarValue] = useState<Date>(new Date());
     const [openCalendar, setOpenCalendar] = useState<boolean>(false);
-
+    const [flyType, setFlyType] = useState('1');
     const [routeSelect, setRouteSelect] = useState<string>('1');
 
     return (
@@ -24,7 +23,7 @@ const FILTERBYFLY: FC = () => {
                 <div className={styles.filter_items_basic_information}>
                     <h3 className={styles.filter_items_basic_title}>Основные сведения</h3>
 
-                    <RadioGroup value={"1"} className={styles.filter_items_radio_con}>
+                    <RadioGroup value={flyType} onChange={setFlyType} className={styles.filter_items_radio_con}>
                         {routesArr && routesArr.map((route) => {
                             return (
                                 <div key={route.id} className={styles.filter_items_radio_choose}>
